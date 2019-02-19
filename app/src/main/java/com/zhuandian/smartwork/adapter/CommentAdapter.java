@@ -37,6 +37,8 @@ public class CommentAdapter extends RecyclerView.Adapter<CommentAdapter.MyViewHo
     @Override
     public void onBindViewHolder(@NonNull MyViewHolder myViewHolder, int i) {
         myViewHolder.tvComment.setText(commentEntities.get(i).getContent());
+        myViewHolder.tvName.setText((commentEntities.get(i).getUser() == null ? "无名" : commentEntities.get(i).getUser().getUsername()) + " 说：");
+        myViewHolder.tvTime.setText(commentEntities.get(i).getCreatedAt());
     }
 
     @Override
@@ -45,6 +47,10 @@ public class CommentAdapter extends RecyclerView.Adapter<CommentAdapter.MyViewHo
     }
 
     class MyViewHolder extends RecyclerView.ViewHolder {
+        @BindView(R.id.tv_name)
+        TextView tvName;
+        @BindView(R.id.tv_time)
+        TextView tvTime;
         @BindView(R.id.tv_comment)
         TextView tvComment;
 
