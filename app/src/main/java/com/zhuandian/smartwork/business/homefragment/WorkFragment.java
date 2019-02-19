@@ -1,4 +1,4 @@
-package com.zhuandian.smartwork.pages;
+package com.zhuandian.smartwork.business.homefragment;
 
 import com.zhuandian.smartwork.R;
 import com.zhuandian.smartwork.base.BaseFragment;
@@ -8,7 +8,7 @@ import com.zhuandian.smartwork.base.BaseFragment;
  * author：xiedong
  * date：2019/2/19
  */
-public class MineFragment extends BaseFragment {
+public class WorkFragment extends BaseFragment {
 
 
     @Override

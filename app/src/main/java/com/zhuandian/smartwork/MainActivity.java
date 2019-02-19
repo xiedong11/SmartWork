@@ -7,10 +7,10 @@ import android.widget.LinearLayout;
 import com.zhuandian.smartwork.adapter.HomeAdapter;
 import com.zhuandian.smartwork.base.BaseActivity;
 import com.zhuandian.smartwork.base.BaseFragment;
-import com.zhuandian.smartwork.pages.DiscussFragment;
-import com.zhuandian.smartwork.pages.MineFragment;
-import com.zhuandian.smartwork.pages.ResourceFragment;
-import com.zhuandian.smartwork.pages.WorkFragment;
+import com.zhuandian.smartwork.business.homefragment.DiscussFragment;
+import com.zhuandian.smartwork.business.homefragment.MineFragment;
+import com.zhuandian.smartwork.business.homefragment.ResourceFragment;
+import com.zhuandian.smartwork.business.homefragment.WorkFragment;
 
 import java.util.ArrayList;
 import java.util.List;

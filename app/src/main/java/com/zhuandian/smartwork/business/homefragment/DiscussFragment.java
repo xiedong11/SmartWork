@@ -1,4 +1,4 @@
-package com.zhuandian.smartwork.pages;
+package com.zhuandian.smartwork.business.homefragment;
 
 import com.zhuandian.smartwork.R;
 import com.zhuandian.smartwork.base.BaseFragment;
@@ -8,7 +8,7 @@ import com.zhuandian.smartwork.base.BaseFragment;
  * author：xiedong
  * date：2019/2/19
  */
-public class ResourceFragment extends BaseFragment {
+public class DiscussFragment extends BaseFragment {
 
 
     @Override
@@ -18,6 +18,7 @@ public class ResourceFragment extends BaseFragment {
 
     @Override
     protected void initView() {
+
 
     }
 }
