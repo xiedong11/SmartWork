@@ -76,6 +76,7 @@ public class DiscussFragment extends BaseFragment {
                         rvCommonList.setAdapter(new CommentAdapter(list));
                         rvCommonList.setLayoutManager(new LinearLayoutManager(actitity));
                         rvCommonList.setVisibility(View.VISIBLE);
+                        tvNewCommont.setVisibility(View.VISIBLE);
                     }
                 });
     }
@@ -106,6 +107,7 @@ public class DiscussFragment extends BaseFragment {
                 break;
             case R.id.tv_new_commont:
                 llSubmitComment.setVisibility(View.VISIBLE);
+                tvNewCommont.setVisibility(View.GONE);
                 rvCommonList.setVisibility(View.GONE);
                 break;
         }

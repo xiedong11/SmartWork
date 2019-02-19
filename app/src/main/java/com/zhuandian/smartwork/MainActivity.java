@@ -41,9 +41,9 @@ public class MainActivity extends BaseActivity {
     protected void setUpView() {
         List<BaseFragment> fragmentList = new ArrayList<>();
         fragmentList.add(new DiscussFragment());
-        fragmentList.add(new MineFragment());
         fragmentList.add(new ResourceFragment());
         fragmentList.add(new WorkFragment());
+        fragmentList.add(new MineFragment());
         homeViewpager.setAdapter(new HomeAdapter(getSupportFragmentManager(), fragmentList));
         homeViewpager.setOffscreenPageLimit(3);
     }
