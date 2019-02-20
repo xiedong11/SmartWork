@@ -14,9 +14,10 @@
         android:textColor="#000"
         android:textSize="18sp" />
 
-    <android.support.v7.widget.RecyclerView
-        android:id="@+id/rv_options"
+    <LinearLayout
+        android:id="@+id/ll_options_container"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="10dp" />
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical" />
 </LinearLayout>
