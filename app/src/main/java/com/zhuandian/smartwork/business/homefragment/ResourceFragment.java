@@ -47,16 +47,18 @@ public class ResourceFragment extends BaseFragment {
                 .findObjects(new FindListener<ResourceEntity>() {
                     @Override
                     public void done(List<ResourceEntity> list, BmobException e) {
-                        list.addAll(list);
-                        rvResourceList.setAdapter(new ResourceAdapter(list, new ResourceAdapter.OnDownloadClick() {
-                            @Override
-                            public void onClick(String url) {
-                                Uri uri = Uri.parse(url);
-                                Intent intent = new Intent(Intent.ACTION_VIEW, uri);
-                                startActivity(intent);
-                            }
-                        }));
-                        rvResourceList.setLayoutManager(new LinearLayoutManager(actitity));
+                        if (e == null) {
+                            list.addAll(list);
+                            rvResourceList.setAdapter(new ResourceAdapter(list, new ResourceAdapter.OnDownloadClick() {
+                                @Override
+                                public void onClick(String url) {
+                                    Uri uri = Uri.parse(url);
+                                    Intent intent = new Intent(Intent.ACTION_VIEW, uri);
+                                    startActivity(intent);
+                                }
+                            }));
+                            rvResourceList.setLayoutManager(new LinearLayoutManager(actitity));
+                        }
                     }
                 });
     }
