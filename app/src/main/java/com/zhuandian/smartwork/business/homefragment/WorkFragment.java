@@ -13,7 +13,7 @@ public class WorkFragment extends BaseFragment {
 
     @Override
     protected int getLayoutId() {
-        return R.layout.fragment_discuss;
+        return R.layout.fragment_work;
     }
 
     @Override
