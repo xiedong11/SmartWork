@@ -70,6 +70,7 @@ public class DiscussFragment extends BaseFragment {
     private void getAllCommentList() {
         BmobQuery<CommentEntity> query = new BmobQuery<>();
         query.order("-createdAt")
+                .include("user")
                 .findObjects(new FindListener<CommentEntity>() {
                     @Override
                     public void done(List<CommentEntity> list, BmobException e) {

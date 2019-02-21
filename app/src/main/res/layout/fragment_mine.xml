@@ -44,14 +44,14 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
                     android:layout_marginBottom="5dp"
-                    android:text="姓名：谢某某"
+                    android:text="姓名：123456"
                     android:textColor="@color/white" />
 
                 <TextView
                     android:id="@+id/tv_user_major"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="专业：通信工程"
+                    android:text="简介：走自己的路让别人说去吧..."
                     android:textColor="@color/white" />
             </LinearLayout>
         </RelativeLayout>
