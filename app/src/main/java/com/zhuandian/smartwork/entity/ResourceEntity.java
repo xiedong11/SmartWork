@@ -12,6 +12,19 @@ public class ResourceEntity extends BmobObject {
     private int type; // 1.图片 2.文件
     private String resourceContent;
     private String resourceUrl;
+    private String classType;  //1 化学系 ，2 英语  3.数学  物理
+//    public static final int CHEMISTR=1;
+//    public static final int ENGLISH=2;
+//    public static final int MATH=3;
+//    public static final int PHSICAL=4;
+
+    public String getClassType() {
+        return classType;
+    }
+
+    public void setClassType(String classType) {
+        this.classType = classType;
+    }
 
     public String getResourceUrl() {
         return resourceUrl;

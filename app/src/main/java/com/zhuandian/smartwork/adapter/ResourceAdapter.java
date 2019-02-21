@@ -50,6 +50,24 @@ public class ResourceAdapter extends RecyclerView.Adapter<ResourceAdapter.MyView
                 }
             }
         });
+
+//        String classType = "数学";
+//        switch (datas.get(i).getClassType()) {
+//            case ResourceEntity.CHEMISTR:
+//                classType = "化学";
+//                break;
+//            case ResourceEntity.ENGLISH:
+//                classType = "英语";
+//                break;
+//            case ResourceEntity.MATH:
+//                classType = "数学";
+//                break;
+//            case ResourceEntity.PHSICAL:
+//                classType = "物理";
+//                break;
+//
+//        }
+        viewHolder.tvClass.setText(datas.get(i).getClassType());
     }
 
     @Override
@@ -68,6 +86,8 @@ public class ResourceAdapter extends RecyclerView.Adapter<ResourceAdapter.MyView
         TextView tvType;
         @BindView(R.id.tv_download)
         TextView tvDownload;
+        @BindView(R.id.tv_class)
+        TextView tvClass;
 
 
         public MyViewHolder(@NonNull View itemView) {
